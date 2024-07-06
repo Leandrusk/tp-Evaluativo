@@ -7,7 +7,9 @@ import { Apartado2Component } from './pages/apartado2/apartado2.component';
 import { Apartado3Component } from './pages/apartado3/apartado3.component';
 import { ProductoComponent } from './pages/producto/producto.component';
 
-
+//componentes de material
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
 @NgModule({
   declarations: [
     Apartado1Component,
@@ -17,7 +19,9 @@ import { ProductoComponent } from './pages/producto/producto.component';
   ],
   imports: [
     CommonModule,
-    ProductoRoutingModule
+    ProductoRoutingModule,
+    MatButtonModule,
+    MatCardModule
   ]
 })
 export class ProductoModule { }

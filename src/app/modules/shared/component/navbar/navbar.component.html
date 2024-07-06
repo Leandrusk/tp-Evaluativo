@@ -1,14 +1,14 @@
 <mat-toolbar>
 
-    <span>Space Fitness</span>
+    <span>Libros piola</span>
   
     <button mat-button routerLink="/inicio">Inicio</button>
   
-    <button mat-button [matMenuTriggerFor]="producto">Productos</button>
+    <button mat-button [matMenuTriggerFor]="producto">Generos</button>
     <mat-menu #producto="matMenu">
-      <button mat-menu-item routerLink="Apartado1">Bicicletas y Caminadoras</button>
-      <button mat-menu-item routerLink="Apartado2">MultiGym y Bancos</button>
-      <button mat-menu-item routerLink="Apartado3">Accesorios</button>
+      <button mat-menu-item routerLink="Apartado1">Ficcion</button>
+      <button mat-menu-item routerLink="Apartado2">Terror</button>
+      <button mat-menu-item routerLink="Apartado3">Fantasia</button>
     </mat-menu>
   
   
@@ -24,8 +24,5 @@
     </mat-menu>
   
   
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-      <mat-icon>favorite</mat-icon>
-    </button>
-  
+    
   </mat-toolbar>
