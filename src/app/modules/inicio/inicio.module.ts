@@ -2,26 +2,30 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { InicioRoutingModule } from './inicio-routing.module';
-import { InicioComponent } from './pages/inicio/inicio/inicio.component';
-import { CardComponent } from './componentes/card/card.component';
-import { CarruselComponent } from './componentes/carrusel/carrusel.component';
 
+//vista - pagina - interfaz del usuario
+import { InicioComponent } from './pages/inicio/inicio.component';
+//componentes locales
+import { CardComponent } from './component/card/card.component';
 
-//cuando usas material tenes que importarlo y exportarlo y los componentes que vos creeas se declaran y se exportan
+//componentes de material
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+
 @NgModule({
   declarations: [
     InicioComponent,
-    CardComponent,
-    CarruselComponent
+    CardComponent
   ],
   imports: [
     CommonModule,
-    InicioRoutingModule
+    InicioRoutingModule,
+    MatButtonModule,
+    MatCardModule
   ],
-  exports: [
-    InicioComponent,
-    CardComponent,
-    CarruselComponent,
+  exports:[
+    MatButtonModule,
+    MatCardModule
   ]
 })
 export class InicioModule { }
