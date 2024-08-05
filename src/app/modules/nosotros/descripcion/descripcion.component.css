@@ -1,0 +1,70 @@
+/* Estilos para la sección "Nosotros" */
+
+/* Estilos para la sección "Nosotros" */
+
+#nosotros {
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: Arial, sans-serif;
+    padding: 40px 20px;
+    border-radius: 12px; /* Bordes redondeados */
+    border: 2px solid #1a73e8; /* Borde marcado */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 100px;
+}
+
+#nosotros h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1a73e8;
+    text-align: center;
+}
+
+#nosotros p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#nosotros ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nosotros ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+#nosotros ul li::before {
+    content: "✓";
+    color: #1a73e8;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#nosotros a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#nosotros a:hover {
+    text-decoration: underline;
+}
+
+#nosotros .contact {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#nosotros .contact p {
+    font-size: 1rem;
+    margin: 0;
+}

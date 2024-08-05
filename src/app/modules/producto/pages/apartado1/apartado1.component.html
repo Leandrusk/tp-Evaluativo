@@ -1,1 +1,37 @@
-<p>apartado1 works!</p>
+<mat-progress-bar mode="indeterminate"></mat-progress-bar>
+
+
+  <div >
+    <mat-card appearance="outlined" class="titulo">
+    <mat-card-content><div class="shadow p-3 mb-5 bg-body-tertiary rounded">Seccion de Ficción</div>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+
+<div class="container ">
+
+  <div class="contenido" *ngFor="let i of info">
+    <mat-card class="example-card" appearance="outlined">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image" class="puntos"></div>
+        <mat-card-title ><ul><li>{{i.titulo}}</li></ul></mat-card-title>
+        <mat-card-subtitle ><ul><li>{{i.genero}}</li></ul></mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="{{i.portada}}" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button
+        matTooltip="Dale a click si te da"
+        aria-label="Button that displays a tooltip when focused or hovered over"
+        (click)="comprar()">
+    Action
+    </button>
+      </mat-card-actions>
+    </mat-card>
+  
+  </div>
+</div>
+
+<mat-progress-bar mode="indeterminate"></mat-progress-bar>
