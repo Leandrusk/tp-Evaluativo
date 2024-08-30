@@ -2,6 +2,11 @@
 .carousel {
     margin-bottom: 2rem;
   }
+  .img{
+    height: 500px;
+  
+    width: 300px;
+  }
   
   h1 {
     text-align: center;
@@ -67,3 +72,17 @@
     }
   }
   
+
+.oculto {
+  display: none;
+}
+
+.mat-card-subtitle,
+.mat-card-content p {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.mat-card-subtitle.oculto,
+.mat-card-content p.oculto {
+  opacity: 0;
+}

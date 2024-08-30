@@ -3,4 +3,6 @@ export interface Libro {
     titulo: string;
     genero: string;
     portada: string;
+    mostrarInfo: boolean;
+
 }

@@ -3,6 +3,7 @@ import { Usuario } from 'src/app/models/usuario';
 import { AuthService } from '../../services/auth.service';
 import { FirestoreService } from 'src/app/modules/shared/services/firestore.service';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-inicio-sesion',
@@ -38,13 +39,23 @@ export class InicioSesionComponent {
 
     const res = await this.servicioAuth.iniciarSesion(credenciales.email, credenciales.password)
       .then(res => {
-        alert('¡Se ha logueado con éxito! :D');
+        Swal.fire({
+          position: "top-end",
+          icon: "success",
+          title: "Your work has been saved",
+          showConfirmButton: false,
+          timer: 1500
+        });
 
         this.servicioRutas.navigate(['/inicio']);
       })
       .catch(err => {
-        alert('Hubo un problema al iniciar sesión :( ' + err);
-
+        Swal.fire({
+          icon: "error",
+          title: "Epa...",
+          text: "Te salio algo mal capo!",
+          footer: '<a href="#">Volver al inicio</a>'
+        });
         this.limpiarInputs();
       })
   }

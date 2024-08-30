@@ -27,7 +27,7 @@
   </div>
 
   <h1>Productos Destacados</h1>
-
+<!--
   <div class="container">
     <div class="row">
   
@@ -55,3 +55,33 @@
   
     </div>
   </div>
+-->
+  
+<div class="container">
+  <div class="row">
+      <div class="col">
+          <div class="contenido" *ngFor="let i of info">
+              <mat-card class="example-card" (mouseenter)="mostrarInfo(i)" (mouseleave)="ocultarInfo(i)">
+                  <mat-card-header>
+                      <div mat-card-avatar class="example-header-image"></div>
+                      <mat-card-title>{{i.titulo}}</mat-card-title>
+                      <mat-card-subtitle [ngClass]="{'oculto': !i.mostrarInfo}">{{i.genero}}</mat-card-subtitle>
+                  </mat-card-header>
+                  <img class="img" mat-card-image src="{{i.portada}}">
+
+                  <mat-card-content [ngClass]="{'oculto': !i.mostrarInfo}">
+                      <p>{{i.titulo}}</p>
+                  </mat-card-content>
+              </mat-card>
+          </div>
+      </div>
+  </div>
+</div>
+
+<style>
+.oculto {
+  display: none;
+}
+</style>
+
+

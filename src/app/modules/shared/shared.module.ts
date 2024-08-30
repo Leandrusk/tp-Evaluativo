@@ -11,6 +11,9 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatCardModule} from '@angular/material/card';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+
+
 
 
 
@@ -26,7 +29,9 @@ import {MatCardModule} from '@angular/material/card';
     MatButtonModule,
     MatToolbarModule,
     MatMenuModule,
-    MatCardModule
+    MatCardModule,
+    MatProgressBarModule
+   
   ],
 
   exports: [
@@ -35,7 +40,10 @@ import {MatCardModule} from '@angular/material/card';
     MatIconModule,
     MatButtonModule,
     MatToolbarModule,
-    MatCardModule
+    MatCardModule, 
+    MatProgressBarModule
   ]
 })
+
 export class SharedModule { }
+

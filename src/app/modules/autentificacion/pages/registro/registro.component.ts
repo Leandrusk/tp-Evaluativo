@@ -6,6 +6,7 @@ import { AuthService } from '../../services/auth.service';
 import { FirestoreService } from 'src/app/modules/shared/services/firestore.service';
 // Servicio de rutas que otorga Angular
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-registro',
@@ -55,7 +56,12 @@ export class RegistroComponent {
     })
     // El método CATCH toma una falla y la vuelve un ERROR
     .catch(error => {
-      alert('Hubo un problema al registrar un nuevo usuario :(');
+      Swal.fire({
+        icon: "error",
+        title: "Epa...",
+        text: "Te salio algo mal capo!",
+        footer: '<a href="#">Volver al inicio</a>'
+      });
     })
 
     const uid = await this.servicioAuth.obtenerUid();

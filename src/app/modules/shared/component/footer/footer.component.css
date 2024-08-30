@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 10vh;
+    margin: 0;
+}
+main {
+    flex: 1;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+.footer-content div {
+    text-align: left;
+}
+hr {
+    border-color: #555;
+}
