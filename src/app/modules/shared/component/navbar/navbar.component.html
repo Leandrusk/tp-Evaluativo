@@ -15,7 +15,11 @@
     <button mat-button routerLink="descripcion">Nosotros</button>
 
     <span class="example-spacer"></span>
-  
+
+
+    <a href="index.html">
+      <img src="C:\Users\rccir\OneDrive\Escritorio\Lea otra vez\tp-Evaluativo\src\assets\npm install bootstrap@5.3.0 (1).png" alt="Logo de la página" class="navbar-logo">
+    </a>
   
     <!--inicio de sesion y formulario de registro-->
     <button mat-icon-button [matMenuTriggerFor]="usuario"><mat-icon>person</mat-icon></button>
@@ -26,5 +30,7 @@
     </mat-menu>
   
   
-    
+        <!--label para modo oscuro-->
+        <label for="toggle" id="label_toggle"><i class="fa-solid fa-moon"></i></label>
+        <input type="checkbox" id="toggle" (click)="cambiarFondo()">
   </mat-toolbar>

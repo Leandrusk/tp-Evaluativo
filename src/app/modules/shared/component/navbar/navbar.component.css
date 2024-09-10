@@ -27,3 +27,38 @@
     #menuSecciones{
         display: n
     }}
+
+    mat-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #333;
+    }
+    
+    mat-toolbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+    
+    .navbar-logo {
+      height: 50px; /* Ajusta el tamaño según lo necesites */
+      width: auto;
+    }
+    
+    ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    
+    ul li {
+      margin: 0 10px;
+    }
+    
+    ul li a {
+      color: white;
+    }
+    
